@@ -1,0 +1,208 @@
+@charset "shift_jis";
+
+/* -------------------------------------------------------------
+
+[1] レイアウトに関する指定
+[2] ヘッダーブロック内に関する指定
+[3] コンテンツブロック内に関する指定
+[4] サイドバーブロック内に関する指定
+[5] フッターブロック内に関する指定
+[6] CSSデザインサンプルリンク指定
+
+----------------------------------------------------------------
+CSSデザインサンプ [ URL ] http://www.css-designsample.com
+------------------------------------------------------------- */
+
+
+/* 一括で全ての要素の余白をゼロに指定 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 全体的なリンク */
+
+a:link,
+a:visited,
+a:hover,
+a:active { text-decoration: underline; }
+
+a:link { color: #00f; }
+
+a:visited { color: #90f; }
+
+a:hover { color: #f00; }
+
+a:active { color: #f00; }
+
+/* -------------------------------------------------------------
+   [1] レイアウトに関する指定 */
+body {
+  font-size: 85%;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url(img/bg-body.jpg) repeat-x 0 0;
+}
+
+#wrapper {
+  text-align: left;
+  width: 830px;
+  margin: 0 auto;
+  background: url(img/bg-container.jpg) repeat-y 0 0;
+}
+
+#header {
+  width: 830px;
+  height: 320px;
+  margin-bottom: 2em;
+  position: relative;
+  background: url(img/bg-header.jpg) no-repeat 0 0;
+}
+
+#contents {
+  float: left;
+  width: 560px;
+  margin-bottom: 3em;
+  padding: 0 10px 0 30px;
+}
+
+#sidebar {
+  float: right;
+  width: 200px;
+  margin-bottom: 3em;
+  padding: 0 10px 0 20px;
+}
+
+#footer {
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+#footer-inner {
+  width: 830px;
+  margin: 0 auto;
+  padding: 25px 0 30px;
+  background: url(img/bg-footer-inner.jpg) no-repeat 0 0;
+}
+
+/* -------------------------------------------------------------
+   [2] ヘッダーブロック内に関する指定 */
+
+/* -- 見出しレベル1 -- */
+h1 {
+  font-size: 100%;
+  font-weight: normal;
+  position: absolute;
+  top: 110px;
+  right: 20px;
+}
+
+/* -- 企業名 ショップ名 サイト名 -- */
+.logo {
+  font-size: 140%;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+/* -- 概要 -- */
+.description {
+  text-align: center;
+  width: 830px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+/* -------------------------------------------------------------
+   [3] コンテンツブロック内に関する指定 */
+
+/* -- 見出し -- */
+h2,h3,h4,h5,h6 {
+  font-size: 120%;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  padding: 1em 0 1em 50px;
+  background: url(img/bg-h.jpg) no-repeat 0 50%;
+}
+
+h3,h4,h5,h6 { margin-top: 2.5em; }
+
+/* -- 文字 -- */
+#contents p {
+  line-height: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+/* -------------------------------------------------------------
+   [4] サイドバーブロック内に関する指定 */
+
+/* -- カテゴリタイトル -- */
+.side-title {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #666;
+}
+
+/* -- リスト -- */
+.localnavi {
+  list-style-type: none;
+  margin: 0 0 2em;
+  padding: 5px;
+  background-color: #ccc;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi a {
+  text-decoration: none;
+  display: block;
+  width: 180px;
+  padding: 5px;
+  background: url(img/bg-localnavi.jpg) no-repeat 0 100%;
+  color: #000;
+}
+
+.localnavi a:hover {
+  text-decoration: none;
+  background: #333 url(img/bg-localnavi.jpg) no-repeat -200px 100%;
+  color: #ffffff;
+}
+
+/* -------------------------------------------------------------
+   [5] フッターブロック内に関する指定 */
+
+#footer p { text-align: center; }
+
+/* -------------------------------------------------------------
+   [6] CSSデザインサンプルリンク指定 */
+
+#cds {
+  font-size: 80%;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin: 0;
+  padding-right: 20px;
+  clear: both;
+}
+
+#cds,
+#cds a,
+#cds a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
