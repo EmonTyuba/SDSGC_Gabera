@@ -1,0 +1,177 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>EmonTyubaの開発部屋</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="base.css" type="text/css" media="screen" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <p class="logo"><a href="index.html">*** EmonTyubaの開発部屋 ***</a></p>
+        </div>
+
+        <div id="contents">
+            <!-- コンテンツここから -->
+
+            <h2>目次</h2>
+            <ul>
+                <li><a href="#run">闘級計算画面の起動</a></li>
+                <li><a href="#chara">キャラクターの設定</a></li>
+                <li><a href="#charaSetting">必殺レベルの設定</a></li>
+                <li><a href="#costume">コスチュームの設定</a></li>
+                <li><a href="#equip">装備の設定</a></li>
+                <li><a href="#cc">闘級の計算</a></li>
+                <li><a href="#save">キャラクターの保存</a></li>
+                <li><a href="#read">キャラクターの読込</a></li>
+                <li><a href="#manage">セーブデータの管理</a></li>
+            </ul>
+            
+
+            <h3 id="run">闘級計算画面の起動</h3>
+            <p>zipを解凍したフォルダに入っているexeファイルをダブルクリックして起動します。</p>
+            <img src="img/howtouse/起動1.png" width="550"/>
+            <p></p>
+            <p>メインメニューにある闘級計算ボタンをクリックします。</p>
+            <img src="img/howtouse/起動2.png" width="550"/>
+            <p></p>
+            <p>闘級計算画面が表示されます。</p>
+            <img src="img/howtouse/起動3.png" width="550"/>
+            
+            <h3 id="chara">キャラクターの設定</h3>
+            <p>闘級計算画面から変更ボタンをクリックします。</p>
+            <img src="img/howtouse/キャラ変更1.png" width="550"/>
+            <p></p>
+            <p>①選びたいキャラクターの種類をクリックして選びます。</p>
+            <p>②選びたいキャラクターをダブルクリックして選びます。</p>
+            <img src="img/howtouse/キャラ変更２.png" width="550"/>
+            <p></p>
+            <p>闘級計算画面にキャラクターが反映されます。</p>
+            <img src="img/howtouse/キャラ変更３.png" width="550"/>
+
+            <h3 id="charaSetting">必殺レベルの設定</h3>
+            <p>必殺レベルのボックスをクリックします。</p>
+            <img src="img/howtouse/必殺１.png" width="550"/>
+            <p>設定したい必殺レベルをクリックして選択します。</p>
+            <img src="img/howtouse/必殺２.png" width="550"/>
+            <p>闘級計算画面に必殺レベルが反映されます。</p>
+            <img src="img/howtouse/必殺３.png" width="550"/>
+
+            <h3 id="costume">コスチュームの設定</h3>
+            <p>ビューティー(頭)、衣装(服)、武器(手)のコスチュームはそれぞれ同じ方法で設定することができます。</p>
+            <p>設定したいコスチュームの種類をクリックで選択します。</p>
+            <img src="img/howtouse/コスチューム１.png" width="550"/>
+            <p>設定したいコスチュームをダブルクリックで選択します。</p>
+            <img src="img/howtouse/コスチューム２.png" width="550"/>
+            <p>装備中のコスチュームのリストに反映されます。</p>
+            <img src="img/howtouse/コスチューム３.png" width="550"/>
+            <p>装備中のコスチュームはそれぞれ赤枠のボタンをクリックすることで、確認することができます。</p>
+            <img src="img/howtouse/コスチューム４.png" width="550"/>
+
+            <h3 id="equip">装備の設定</h3>
+            <p>装備したい種類をクリックで選択します。装備の種類は以下のように対応しています。</p>
+            <ol>
+                <li>腕：腕輪</li>
+                <li>指：指輪</li>
+                <li>首：首飾り</li>
+                <li>耳：耳飾り</li>
+                <li>腰：ベルト</li>
+                <li>石：ルーン</li>
+            </ol>
+            <p></p>
+            <img src="img/howtouse/装備１.png" width="550"/>
+            <p>装備したいものをダブルクリックします。<br>※既に何か装備されている場合は、装備の切り替えが発生します。</p>
+            <img src="img/howtouse/装備２.png" width="550"/>
+            <p>装備中のリストに反映されます。</p>
+            <img src="img/howtouse/装備３.png" width="550"/>
+            <p>装備品の個体値はスライドバーをドラッグすることで変更できます。</p>
+            <img src="img/howtouse/装備４.png" width="550"/>
+            <p>カーソルキー(←　→)を押すと、個体値を1ずつ調整できます。</p>
+            <img src="img/howtouse/装備５.png" width="550"/>
+            <p>装備の覚醒値はプルダウンから希望の覚醒値を選択します。</p>
+            <img src="img/howtouse/装備６.png" width="550"/>
+            <img src="img/howtouse/装備７.png" width="550"/>
+            <p>装備の強化値はプルダウンから希望の強化値を選択します。</p>
+            <img src="img/howtouse/装備８.png" width="550"/>
+            <img src="img/howtouse/装備９.png" width="550"/>
+            <p>装備を刻印する場合は、チェックボックスをクリックします。</p>
+            <img src="img/howtouse/装備１０.png" width="550"/>
+            <p>装備のオプションを設定する場合は、オプション名とオプション値をそれぞれクリックで選択します。</p>
+            <p>※オプションは最大５個まで設定することができます。</p>
+            <img src="img/howtouse/装備１１.png" width="550"/>
+            <img src="img/howtouse/装備１２.png" width="550"/>
+            <img src="img/howtouse/装備１３.png" width="550"/>
+            <img src="img/howtouse/装備１４.png" width="550"/>
+            <img src="img/howtouse/装備１５.png" width="950"/>
+            <p>装備中のものを外したい場合、外したい装備名をダブルクリックすることで外すことができます。</p>
+            <img src="img/howtouse/装備１６.png" width="550"/>
+            
+            <h3 id="cc">闘級の計算</h3>
+            <p>ステータスや闘級の計算をしなおす場合は、闘級計算ボタンをクリックします。</p>
+            <img src="img/howtouse/闘級１.png" width="550"/>
+            <img src="img/howtouse/闘級２.png" width="550"/>
+
+            <h3 id="save">キャラクターの保存</h3>
+            <p>作成したキャラクターを保存することができます。闘級計算画面の保存ボタンをクリックします。</p>
+            <p></p>
+            <p>新しくセーブデータを作る場合は、新規作成。<br>既にあるデータを上書きする場合は、上書きを選択してください。</p>
+            <img src="img/howtouse/保存１.png" width="550"/>
+            <p>新しく保存する場合はセーブデータの名前を入力してください。</p>
+            <img src="img/howtouse/保存２.png" width="550"/>
+            <p>保存を実行する場合は、保存。やめる場合はキャンセルボタンをクリックしてください。</p>
+            <img src="img/howtouse/保存３.png" width="550"/>
+
+            <h3 id="read">キャラクターの読み込み</h3>
+            <p>キャラクターの保存で作成したセーブデータを読み込むことができます。</p>
+            <p>闘級計算画面の読込ボタンをクリックします。</p>
+            <p>読み込みたいセーブデータをダブルクリックします。</p>
+            <img src="img/howtouse/読込１.png" width="550"/>
+            <p>読込が行われ、闘級計算画面に反映されます。</p>
+            <img src="img/howtouse/読込２.png" width="550"/>
+            
+            <h3 id="manage">セーブデータの管理</h3>
+            <p>セーブデータを管理する画面は、メインメニューのセーブデータボタンから起動できます。</p>
+            <img src="img/howtouse/管理１.png" width="550"/>
+            <p>編集したいセーブデータを右のリストからクリックして選択します。</p>
+            <p>名前を変更する場合は、名前変更ボタン。データを削除する場合は、削除ボタンをクリックします。</p>
+            <img src="img/howtouse/管理２.png" width="550"/>
+            <p>名前を変更する場合は、希望する名前を入力してから更新ボタンを押してください。</p>
+            <img src="img/howtouse/管理３.png" width="550"/>
+            <p>データを削除する場合は、OKボタンを押してください。</p>
+            <img src="img/howtouse/管理４.png" width="550"/>
+
+
+            <!-- コンテンツここまで -->
+        </div><!-- / contents end -->
+
+        <div id="sidebar">
+            <!-- サイドバー ここから -->
+
+            <p class="side-title">*** リンク ***</p>
+            <ul class="localnavi">
+                <li><a href="index.html">メインページ</a></li>
+                <li><a href="HowToUse.html">使い方</a></li>
+            </ul>            
+
+            <!-- サイドバー ここまで -->
+        </div><!-- / sidebar end -->
+        <!-- 削除不可 -->
+        <p id="cds">Designed by <a href="http://www.css-designsample.com/">CSS.Design Sample</a></p></div>
+    </div>
+    <div id="footer">
+        <div id="footer-inner">
+            <!-- コピーライト / 著作権表示 -->
+            <p>Copyright &copy; @EmonTyuba All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
